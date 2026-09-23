@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  margin-bottom: 36px;
+}
+
+.control-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+}
+
+.control-group input,
+.control-group select {
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.control-group input:focus,
+.control-group select:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.category-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f1f5f9;
+  text-align: left;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80px;
+  padding: 16px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-card:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.25);
+}
+
+.status-msg,
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.status-msg.error {
+  color: #ef4444;
+}
